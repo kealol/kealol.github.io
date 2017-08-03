@@ -1,0 +1,241 @@
+
+
+<html>
+<head>
+	<title>Serenity</title>
+
+	<base target="_blank"/>
+
+	<link rel="stylesheet" type="text/css" href="stuff/newstyle.css"/>
+
+
+
+
+
+
+
+
+	<meta property="og:image" content="https://cydia.saurik.com/icon@2x/org.thebigboss.iconizer.png">
+
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta name ="description" content="A page about iPhone Software." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
+
+
+	<script type="text/javascript">
+		Window.prototype.alert=function(){};
+	</script>
+
+
+	<script type="text/javascript">
+	function moveChildren(src, dest) {
+		one = document.getElementById(src);
+		two = document.getElementById(dest);
+		while (one.hasChildNodes())
+	    	two.appendChild(one.childNodes[0]);
+	}
+	</script>
+
+
+<script type="text/javascript">
+	//adds 'all screenshots' link to inlined screenshots
+	var MakeImgLinks = function() {
+		var images = document.getElementById('description').getElementsByTagName('img');
+		for (var i = 0; i < images.length; i++) {
+			var parent = images[i].parentElement;
+			var element = parent.innerHTML;
+			parent.innerHTML = '<a style="display:block; color:inherit !important;" href="iconizerSS.php" target="_new">' + element + '</a>';
+
+		}
+	};
+	
+	
+//	window.addEventListener("load", MakeImgLinks);
+
+	</script>
+
+
+<script type="text/javascript">
+(function() {
+     var update = function() {
+         if (window.parent != window)
+             parent.postMessage({cytyle: {name: "iframe-y", value: document.body.scrollHeight}}, "*");
+     };
+     window.addEventListener('message', function(event) {
+         var message = event.data.cytyle;
+         if (message == undefined)
+             return;
+         switch (message.name) {
+             case "iframe-y":
+                 var height = message.value;
+                 var iframes = document.getElementsByTagName("iframe");
+                 if (iframes.length != 1)
+                     return;
+                 var iframe = iframes.item(0);
+                 iframe.style.height = height + 'px';
+                 update();
+             break;
+         }
+     }, false);
+     window.addEventListener('DOMContentLoaded', update, false);
+ })();
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8971385472108689",
+    enable_page_level_ads: true
+  });
+</script></head>
+
+<body>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+<panel>
+	<fieldset style="clear:both" id="description">
+	<label>Description</label>
+
+		<div>
+			
+Compatible with Anemone (iOS 7-10)<br>
+
+<p>Hi, today I am proud to announce that my theme Serenity will be availible for jailbroken devices<br>
+
+<p>Tested on a iPhone 6 running iOS 10.2</p>
+
+<p>
+<div style="text-align:center;"> 
+<img width="132" height="234" src="stuff/ss.jpg" />
+<img width="132" height="234" src="stuff/ss.jpg" />
+</div>
+<p>
+<div style="text-align:center;"> 
+<img width="132" height="234" src="stuff/ss.jpg" />
+<img width="132" height="234" src="stuff/ss.jpg" />
+</div>
+
+<p>
+New screenshots coming soon.
+
+			
+		</div>
+	</fieldset>
+
+
+	
+	
+
+
+
+
+
+
+
+
+</panel>
+
+<script  type="text/javascript">
+ MakeImgLinks();
+</script>
+
+
+
+<panel>
+
+	<fieldset style="clear:both">
+		<label>What's new in version 1.0</label>
+		<div>
+			
+- Initial release<br>
+
+<!--
+- Initial release.
+-->
+
+		</div>
+	</fieldset>
+
+
+	
+</panel>
+
+
+
+
+<panel>
+
+	<fieldset style="clear:both">
+		<label>Information</label>
+		<div>
+		<table class="information" cols="2" border="0">
+		<tr>
+			<td class="key">Updated</td>
+			<td class="detail">August 2nd, 2017</td>
+		</tr>
+		
+		<tr>
+			<td class="key">License</td>
+			<td class="detail">Commercial&nbsp;Package</td>
+		</tr>
+		
+				<tr>
+			<td class="key">Suggested Price</td>
+			<td class="detail">$ 0</td>
+		</tr>
+				
+
+		</table>
+		</div>
+	</fieldset>
+
+
+
+
+
+
+
+
+
+	<fieldset style="clear:both">
+		<a class="button" href="http://mobile.twitter.com/0R4NG3_R41N">Developer Twitter</a>
+	</fieldset>
+
+
+
+
+
+
+
+
+<!--
+	<fieldset style="clear:both">
+		<a class="button" href="Advertise.php">Advertise in Cydia</a>
+	</fieldset>
+		
+-->	
+
+</panel>
+
+
+
+<panel>
+	<fieldset style="clear:both">
+		<a class="button" href="https://twitter.com/ColinThe1">Tester/Porter Twitter</a>
+	</fieldset>
+</panel>
+
+
+</body>
+</html>
